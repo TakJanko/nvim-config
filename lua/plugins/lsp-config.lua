@@ -2,7 +2,6 @@ return {
 	{
 		"mason-org/mason.nvim",
 		opts = function()
-			-- dofile(vim.g.base46_cache .. "mason")
 			return {
 				ensure_installed = {
 					"stylua",
@@ -27,7 +26,6 @@ return {
 		"mason-org/mason-lspconfig.nvim",
 		opts = function()
 			require("mason-lspconfig").setup({ automatic_enable = true })
-			-- return require("config.mason-lspconfig").setup{}
 		end,
 	},
 }

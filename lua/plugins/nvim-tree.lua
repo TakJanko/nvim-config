@@ -2,7 +2,6 @@ return {
 	{
 		"nvim-tree/nvim-tree.lua",
 		cmd = { "NvimTreeToggle", "NvimTreeFocus" },
-		-- dofile(vim.g.base46_cache .. "nvimtree"),
 		opts = {
 			filters = { dotfiles = false },
 			disable_netrw = true,
