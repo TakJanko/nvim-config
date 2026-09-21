@@ -3,6 +3,7 @@ return {
 		"catppuccin/nvim",
 		name = "catppuccin",
 		priority = 1000,
+		lazy = false,
 		opts = {
 			flavour = "mocha", -- latte, frappe, macchiato, mocha
 			background = { -- :h background
@@ -83,7 +84,7 @@ return {
 		opts = {
 			options = {
 				icons_enabled = true,
-				theme = "catppuccin",
+				theme = "catppuccin-nvim",
 				component_separators = { left = "", right = "" },
 				section_separators = { left = "", right = "" },
 				disabled_filetypes = {
@@ -137,8 +138,6 @@ return {
 	},
 	{
 		"akinsho/bufferline.nvim",
-		after = "catppuccin",
-		version = "*",
 		dependencies = {
 			"nvim-tree/nvim-web-devicons",
 			"famiu/bufdelete.nvim",
@@ -161,7 +160,7 @@ return {
 						},
 					},
 				},
-				highlights = require("catppuccin.groups.integrations.bufferline").get_theme(),
+				highlights = require("catppuccin.special.bufferline").get_theme(),
 			})
 		end,
 	},

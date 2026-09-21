@@ -13,6 +13,8 @@ opt.shiftround = true
 opt.signcolumn = "yes"
 opt.smartindent = false
 opt.termguicolors = true
+opt.scrollback = 50000
+opt.scrolloff = 12
 
 local servers = { "lua_ls", "clangd", "pyright" }
 vim.lsp.enable(servers)
