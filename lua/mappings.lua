@@ -38,6 +38,9 @@ map(
 	{ desc = "telescope fuzzy find in current buffer" }
 )
 
+-- markdown
+map("n", "<leader>np", "<cmd>MarkdownPreviewToggle<cr>", {desc = "markdown preview", })
+
 -- lsp
 local buf = vim.lsp.buf
 map("n", "<leader>lh", buf.hover, { desc = "lsp hover" })
