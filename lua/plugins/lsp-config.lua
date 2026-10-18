@@ -46,5 +46,5 @@ return {
 			},
 			automatic_enable = true,
 		},
-	},
+	}
 }
