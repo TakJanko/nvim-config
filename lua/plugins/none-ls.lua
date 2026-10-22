@@ -5,6 +5,7 @@ return {
 		opts.sources = vim.list_extend(opts.sources or {}, {
 			nls.builtins.formatting.stylua,
 			nls.builtins.formatting.clang_format,
+			nls.builtins.formatting.qmlls,
 		})
 	end,
 }

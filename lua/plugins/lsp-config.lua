@@ -43,6 +43,7 @@ return {
 				"pyright",
 				"marksman",
 				"texlab",
+				"qmlls",
 			},
 			automatic_enable = true,
 		},
